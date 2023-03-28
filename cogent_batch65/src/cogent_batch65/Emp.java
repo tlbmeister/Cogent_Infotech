@@ -52,7 +52,7 @@ public class Emp {
 		try {
 		Emp e1=new Emp(1,"Joe","Manager",1000);
 		e1.printDET();
-		Emp e2=new Emp(2,"John","Officer",100);
+		Emp e2=new Emp(2,"John","Officer",1000);
 		e2.printDET();
 		Emp e3=new Emp(3,"Jane","Clerk",1000);
 		e3.printDET();
