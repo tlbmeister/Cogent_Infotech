@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    <bean name="hello" class="cogentbatch65.HelloWorld.Greeting"></bean>
+    
+    <bean name="emp" class="cogentbatch65.HelloWorld.Employee" p:id="1001" p:name="Gyanendra"></bean>    
+    <bean name="person" class="cogentbatch65.HelloWorld.Person">
+    	 <property name="id" value="1001"></property>
+    	<property name="name" value="Shiva"></property>
+    	<property name="age" value="30"></property>
+    	<!-- <constructor-arg value="1001"></constructor-arg>
+    	<constructor-arg value="Shiva"></constructor-arg>
+    	<constructor-arg value="40"></constructor-arg> -->
+    </bean>
+
+	<bean name="hospital" class="cogentbatch65.HelloWorld.Hospital">
+		<property name="name" value="Global Hospital"></property>
+		<property name="department">
+			<list>
+				<value>Front Office</value>
+				<value>In Patient</value>
+				<value>Out Patient</value>
+			</list>
+		</property>
+
+
+	</bean>
+	
+<bean name="customer" class="cogentbatch65.HelloWorld.Customer">
+	<property name="id">
+		<value>1</value>
+	</property>
+	<property name="products">
+		<map>
+			<entry key="1001" value="iphone"></entry>
+			<entry key="1002" value="samsung"></entry>
+			<entry key="1003" value="Oppo"></entry>
+			<entry key="1004" value="Nokia"></entry>
+		</map>
+	</property>
+
+</bean>
+    
+    </beans>

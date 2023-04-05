@@ -1,0 +1,5 @@
+package cogentbatch65spring;
+
+public class BeanConfiguration {
+
+}

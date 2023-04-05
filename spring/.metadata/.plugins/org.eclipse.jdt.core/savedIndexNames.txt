@@ -1,0 +1,11 @@
+INDEX VERSION 1.132+/Users/trav/spring/.metadata/.plugins/org.eclipse.jdt.core
+312088331.index
+3927879410.index
+852664895.index
+1782364428.index
+444481379.index
+2355167047.index
+1865797976.index
+3478867198.index
+1224378670.index
+1800666924.index
