@@ -10,10 +10,10 @@ public class Main {
 	
 	public static void main(String[] args) {
 
-	ConfigurableApplicationContext ctx=new AnnotationConfigApplicationContext(Main.class);
-	ChatService chatService=ctx.getBean(ChatService.class);
-	
-	chatService.chat();
-	ctx.close();
+		ConfigurableApplicationContext ctx = new AnnotationConfigApplicationContext(Main.class);
+		ChatService chatService = ctx.getBean(ChatService.class);
+
+		chatService.chat();
+		ctx.close();
 	}
 }
