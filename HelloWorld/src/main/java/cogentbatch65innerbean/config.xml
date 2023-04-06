@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+	<bean name="employee" class="cogentbatch65innerbean.Employee" p:id="123" scope="prototype">
+	<property name="address">
+	<bean class="cogentbatch65innerbean.Address" p:hno="700" p:street="Mira Mesa Blvd" p:city="New York"></bean>
+	</property>
+	</bean>
+	
+	<bean name="university" class="cogentbatch65innerbean.University" p:id="1001" p:name="Cogent" scope="prototype">
+	<property name="location">
+	<bean class="cogentbatch65innerbean.Address" p:hno="300" p:street="Main Street" p:city="DC"></bean>
+	</property>
+	</bean>
+
+</beans>
