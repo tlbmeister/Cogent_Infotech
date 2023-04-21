@@ -1,0 +1,19 @@
+<div>
+  <form novalidate #userform="ngForm" (ngSubmit)="onSubmit(userform)">
+    <h3>User</h3>
+
+    <label>Name</label>
+    <input type="text" required [(ngModel)]="user.name" name="name" placeholder="Enter your name"><br>
+
+    <label>Age</label>
+    <input type="number" required [(ngModel)]="user.age" name="age" placeholder="Enter your age"><br>
+
+    <label>Salary</label>
+    <input type="number" required [(ngModel)]="user.salary" name="salary" placeholder="Enter your salary"><br>
+
+    <button type="submit">Add</button>
+    <button type="reset">Reset Form</button>
+  </form>
+</div>
+
+<user></user>
