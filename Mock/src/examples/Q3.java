@@ -12,10 +12,8 @@ public class Q3 {
 					  {1,3,0,2,4}};
 		int[][] arr2= {{2,2},
 				{1,2},{3,4}};
-		int[][] arr3= {{1,2,3,5},{2,3,8,8},{3,8,3,2}};
 		System.out.println(result(arr));
 		System.out.println(result(arr2));
-		System.out.println(result(arr3));
 
 
 
